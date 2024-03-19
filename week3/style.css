@@ -1,0 +1,121 @@
+h1 {
+  color: green;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 2000;
+}
+
+/* BLAHBLAHBLAH IS IS A COMMENT TO EXPLAIN MY CODE */
+
+* {
+  color: hotpink;
+}
+
+p {
+  color: blue;
+}
+
+h2 {
+  color: blueviolet;
+}
+
+span {
+  color: darkcyan;
+}
+
+.my-colors {
+  color: lightsalmon;
+}
+
+#venue {
+  color: red;
+}
+
+[data-email="email"] {
+  color: turquoise;
+}
+
+ul > li {
+  color: brown;
+}
+
+li > strong {
+  color: purple;
+}
+
+body {
+  text-align: center;
+  border: red solid;
+  background-image: linear-gradient(
+    to right bottom,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+}
+
+p {
+  line-height: 1.7;
+}
+
+.happy-monkey-regular {
+  font-family: "Happy Monkey", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poor-story-regular {
+  font-family: "Poor Story", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-mono-light {
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.dm-mono-regular {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-mono-medium {
+  font-family: "DM Mono", monospace;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+.dm-mono-light-italic {
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.dm-mono-regular-italic {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.dm-mono-medium-italic {
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
