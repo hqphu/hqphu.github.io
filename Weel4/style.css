@@ -1,0 +1,20 @@
+body {
+  background-color: #1a120b;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* color: #e5e5cb; */
+  color: white;
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
