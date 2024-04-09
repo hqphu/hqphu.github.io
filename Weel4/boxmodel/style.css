@@ -18,3 +18,24 @@ body {
 h1 {
   font-size: 2rem;
 }
+
+.outer {
+  border: 1px dashed white;
+  width: 400px;
+  min-height: 200px;
+}
+
+p {
+  /* line-height: 120px; */
+  padding: 10px;
+}
+
+.inner {
+  background-color: lightsalmon;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 30px;
+  border: 3px solid lime;
+}
