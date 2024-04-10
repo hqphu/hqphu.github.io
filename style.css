@@ -1,0 +1,17 @@
+body {
+  margin: 5em;
+  margin-top: 5em;
+}
+h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+p {
+  display: block;
+  font-size: large;
+  align-content: center;
+  justify-content: center;
+  min-width: none;
+  max-height: fit-content;
+}
