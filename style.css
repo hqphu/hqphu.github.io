@@ -23,28 +23,34 @@
 }
 
 h1 {
-  font-size: 10vw;
   text-align: center;
+  font-size: 3rem;
+}
+
+body,
+html {
+  height: 100%;
 }
 
 body {
-  margin: 5rem;
-  margin-top: 5em;
+  margin-top: 40px;
+  width: 100%;
+  min-height: 100vh;
 }
 
 p {
+  font-size: auto;
   text-align: justify;
   display: flex;
-  font-size: 3vw;
   align-content: center;
   justify-content: center;
   min-width: none;
   max-height: fit-content;
   margin: auto;
+  padding: 30px;
 }
 
 a {
-  font-size: 30vw;
   color: darkblue;
   display: flex;
   text-align: center;
