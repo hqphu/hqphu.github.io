@@ -9,12 +9,26 @@ body {
 }
 
 p {
-  text-align: center;
+  text-align: justify;
   display: flex;
-  font-size: large;
+  font-size: 3vw;
   align-content: center;
   justify-content: center;
   min-width: none;
   max-height: fit-content;
   margin: auto;
+}
+
+a {
+  font-size: 30vw;
+  color: darkblue;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
 }
