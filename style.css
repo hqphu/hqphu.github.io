@@ -5,7 +5,7 @@
 }
 
 .gloria-hallelujah-regular {
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: "Gloria Hallelujah";
   font-weight: 400;
   font-style: normal;
 }
@@ -22,39 +22,38 @@
   font-style: normal;
 }
 
+body {
+  width: fit-content;
+  height: 100vh;
+  min-height: 100vh;
+  margin: 10%;
+  max-width: 100%;
+  margin-top: 5%;
+}
+
 h1 {
   text-align: center;
   font-size: 5vw;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
-  margin: 40px;
-}
-
-p {
-  font-size: auto;
-  text-align: justify;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  min-width: none;
-  max-height: fit-content;
-  margin: auto;
-  padding: 30px;
+h2 {
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 5%;
 }
 
 a {
-  color: darkblue;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin: auto;
+  color: #242424;
+  display: inline;
   text-decoration: none;
 }
 
 a:hover {
   color: orange;
+}
+
+.startingLine {
+  font-size: 10vw;
+  text-align: center;
+  display: block;
 }
