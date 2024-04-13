@@ -23,8 +23,6 @@
 }
 
 body {
-  width: fit-content;
-  height: 100vh;
   min-height: 100vh;
   margin: 10%;
   max-width: 100%;
@@ -56,4 +54,5 @@ a:hover {
   font-size: 10vw;
   text-align: center;
   display: block;
+  font-style: italic;
 }
