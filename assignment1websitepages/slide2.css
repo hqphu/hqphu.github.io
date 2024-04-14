@@ -30,8 +30,7 @@
 
 section {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 5vw;
   margin-top: 5vw;
 }
@@ -49,6 +48,27 @@ body {
   color: orange;
 }
 
-a:hover {
-  font-size: 3rem;
+.firstScroll {
+  margin-top: 90%;
+  margin-bottom: 90%;
+  text-align: right;
+}
+
+.arrow,
+.firstAnother,
+.secondAnother {
+  margin-bottom: 90%;
+}
+
+.secondAnother {
+  text-align: right;
+}
+
+.secondArrow {
+  transform: scaleX(-1);
+  margin-bottom: 90%;
+}
+
+a {
+  display: inline;
 }
