@@ -27,3 +27,16 @@
   font-style: normal;
   color: orange;
 }
+
+img.animated-gif {
+  width: 100%;
+  height: auto;
+  margin: none;
+}
+
+h1,
+p {
+  margin: 5vw;
+  margin-top: 5vw;
+  font-size: 1.5rem;
+}
