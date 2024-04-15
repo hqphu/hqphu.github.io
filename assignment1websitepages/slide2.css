@@ -22,31 +22,35 @@ section {
 body {
   font-size: 1.5rem;
 }
+/* again above im introducing the google fonts for styling and setting the text size for the user */
 
 .firstScroll {
   margin-top: 90%;
   margin-bottom: 90%;
   text-align: right;
 }
+/* i have assigned the class name above that this ia what i expect the user to do with this section of the webpage, text align is set to the right to seperate the word with the paragraph on the page, also to align witht he direction of the arrow image placed below */
 
 .arrow,
 .firstAnother,
 .secondAnother {
   margin-bottom: 90%;
 }
+/* adding margins to these elements to seperate them from one another and to prompt the scroll from the user */
 
 .secondAnother {
   text-align: right;
 }
+/* text align to again match the elements with the arrow */
 
 .secondArrow {
   transform: scaleX(-1);
   margin-bottom: 90%;
 }
+/* transforming the arrow image with a rotation to direct the image in the same form as the next element to come below */
 
 .clickLink {
   text-decoration: none;
   display: inline;
 }
-
-
+/* styling the link added to click to make it more flush with the other text bodies */

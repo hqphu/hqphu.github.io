@@ -27,6 +27,7 @@
   font-style: normal;
   color: orange;
 }
+/* introducing the google fonts for styling */
 
 section {
   display: grid;
@@ -35,10 +36,12 @@ section {
   margin: 5vw;
   margin-top: 5vw;
 }
+/* section has been assign to style the layout of the page elements and sectrions as a grid and easily set the cells to situate the elements inside them on the webpage */
 
 body {
   font-size: 1.5rem;
 }
+/* setting the webpage text size for the user */
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
@@ -48,7 +51,9 @@ body {
   text-decoration: none;
   color: orange;
 }
+/* introducing the google icon to act as a image into the the next page */
 
 a:hover {
   font-size: 3rem;
 }
+/* highlighted words are assigned with a link state that increases the size to highlight key words with further user interactivity with the hover */

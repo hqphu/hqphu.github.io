@@ -27,12 +27,15 @@
   font-style: normal;
   color: orange;
 }
+/* introducing google fonts once again */
 
 img.animated-gif {
   width: 100%;
   height: auto;
   margin: none;
 }
+/* allowing the image to stretch the entire page so it fills the screen fopr the user to immerse themself in the gif similar to moving image content found on the Sculpting Harmony website */
+/* the gif also becomes a landmark on the page for the user to eventually scroll down into the deeper sections of the webpage analysis, and into the scrollytell */
 
 h1,
 p {
@@ -40,3 +43,4 @@ p {
   margin-top: 5vw;
   font-size: 1.5rem;
 }
+/* setting the text elements on the pages to allow them to be more uniform for readability */
