@@ -15,6 +15,7 @@ body {
   color: #e5e5cb;
   /* color: #3c2a21; */
   font-size: 1.1rem;
+  flex-direction: column;
 }
 
 .outer {
@@ -72,4 +73,9 @@ a {
 
 .coral-box {
   background-color: coral;
+}
+
+p {
+  font-size: 2rem;
+  color: black;
 }
