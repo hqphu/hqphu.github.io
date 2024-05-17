@@ -24,6 +24,10 @@ body {
   align-items: center;
   justify-content: space-between;
   background: url(pixel-art-lo-fi-city-mvqzjym6ie17firw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Add additional styles as needed */
