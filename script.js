@@ -117,18 +117,24 @@ startBtn.addEventListener("click", () => {
 });
 
 daytime.addEventListener("click", () => {
+  videoInput.src =
+    "vecteezy_ai-generated-beautiful-fantasy-island-with-a-house-in_37918793.mp4";
   daytime.classList.add("daytime");
   sunset.classList.remove("sunset");
   night.classList.remove("night");
 });
 
 sunset.addEventListener("click", () => {
+  videoInput.src =
+    "vecteezy_ai-generated-silhouettes-of-people-against-the-background-of_38599328.mp4";
   daytime.classList.remove("daytime");
   sunset.classList.add("sunset");
   night.classList.remove("night");
 });
 
 night.addEventListener("click", () => {
+  videoInput.src =
+    "No copyright Lofi animation Background loop ｜ visual loop.mp4";
   daytime.classList.remove("daytime");
   sunset.classList.remove("sunset");
   night.classList.add("night");
