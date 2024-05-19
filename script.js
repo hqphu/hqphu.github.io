@@ -7,6 +7,10 @@ let reset = document.getElementById("btn-reset");
 let pause = document.getElementById("btn-pause");
 let time = document.getElementById("time");
 let audio = document.getElementById("focus-audio");
+let daytime = document.getElementById("daytime");
+let sunset = document.getElementById("sunset");
+let night = document.getElementById("night");
+let videoInput = document.getElementById("video-input");
 let set;
 let active = "focus";
 let count = 59;
@@ -110,4 +114,22 @@ startBtn.addEventListener("click", () => {
     }, 1000);
   }
   audio.play();
+});
+
+daytime.addEventListener("click", () => {
+  daytime.classList.add("daytime");
+  sunset.classList.remove("sunset");
+  night.classList.remove("night");
+});
+
+sunset.addEventListener("click", () => {
+  daytime.classList.remove("daytime");
+  sunset.classList.add("sunset");
+  night.classList.remove("night");
+});
+
+night.addEventListener("click", () => {
+  daytime.classList.remove("daytime");
+  sunset.classList.remove("sunset");
+  night.classList.add("night");
 });

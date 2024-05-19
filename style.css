@@ -104,11 +104,23 @@ button {
   background-color: #159c9c;
 }
 
+.daytime {
+  background-color: #159c9c;
+}
+
 #sunset:hover {
   background-color: #ff8c00;
 }
 
+.sunset {
+  background-color: #ff8c00;
+}
+
 #night:hover {
+  background-color: #8c00ff;
+}
+
+.night {
   background-color: #8c00ff;
 }
 
