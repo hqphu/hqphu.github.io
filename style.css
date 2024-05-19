@@ -1,125 +1,121 @@
-:root {
-  --primary-bg-color: #f4f4f4;
-  --text-color: #333;
-  --main-bg-color: #333;
-  --main-text-color: #fff;
-  --main-btn-bg-color: #938989;
-}
-
-body,
-h1,
-p,
-ul {
-  margin: 0;
+* {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body {
-  font-family: "Arial", sans-serif;
-  background-color: var(--primary-bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background: url(pixel-art-lo-fi-city-mvqzjym6ie17firw.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-/* Add additional styles as needed */
-
-/* Create a container for the main content */
 .container {
-  max-width: 1000px;
-  width: 100%;
-  padding: 10px;
+  width: min(90%, 500px);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 4em 2em;
+  border-radius: 0.5em;
 }
-
-/* Header styling */
-header {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-
-/* Navigation styling */
-nav {
-  margin-top: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
+.section-container {
   display: flex;
+  gap: 1em;
   justify-content: center;
 }
-
-nav ul li {
-  margin-right: 20px;
+.btn {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  background-color: #3e3f43;
+  color: #ffffff;
+  transition: background-color 500ms ease-in;
 }
-
-nav a {
-  text-decoration: none;
-  color: var(--text-color);
+.btn-focus {
+  background-color: #1e00ff;
+  color: #ffffff;
 }
-
-/* Media player styling */
-.media-player {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.media-player video {
-  max-width: 100%;
-}
-
-.custom-controls {
+.time-btn-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 10px;
-  width: 100%;
+  flex-direction: column;
+  margin-top: 2em;
 }
-
-.custom-controls button {
-  background-color: var(--main-btn-bg-color);
-  color: var(--main-text-color);
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-}
-
-.progress-bar {
-  width: 100%;
-  height: 10px;
-  background-color: #ddd;
-  margin-top: 10px;
-  overflow: hidden;
-}
-
-.progress-bar span {
-  display: block;
-  height: 100%;
-  background-color: var(--main-bg-color);
-  width: 0;
-  transition: width 0.3s ease;
-}
-
-/* Footer styling */
-footer {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
+#time {
   text-align: center;
-  padding: 10px 0;
-  width: 100%;
+  color: #ffffff;
+  font-size: 5em;
+  font-weight: 600;
+  margin-bottom: 20%;
+  margin-top: 20%;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+#btn-start,
+#btn-pause {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  background-color: #0011ff;
+}
+#btn-reset {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 2em;
+}
+.hide {
+  display: none;
+  transition: display 100ms, opacity 0.5s linear;
+}
+.show {
+  display: block;
+  transition: display 100ms, opacity 0.5s linear;
+}
+
+.pomodoro {
+  display: block;
+}
+
+.world-selection {
+  justify-content: center;
+  display: flex;
+  margin-top: 20%;
+}
+
+.btnforwlds {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  background-color: #3e3f43;
+  color: #ffffff;
+  transition: background-color 500ms ease-in;
+}
+
+/* CSS Animations for the Pomodoro */
+
+.btn:hover {
+  background-color: #1e00ff;
+}
+
+#daytime:hover {
+  background-color: #159c9c;
+}
+
+#sunset:hover {
+  background-color: #ff8c00;
+}
+
+#night:hover {
+  background-color: #8c00ff;
+}
+
+#video-worlds {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }

@@ -6,76 +6,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <h1>Media Player Website</h1>
-    </header>
-
-    <audio controls loop>
-      <source src="erokia_ambient-wave-56-msfxp7-78.mp3" type="audio/mpeg" />
-    </audio>
-
-    <!-- Header Section -->
-    <header>
-      <h1>Media Player Website</h1>
-    </header>
-
-    <!-- Navigation Section -->
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Playlists</a></li>
-        <!-- Add or remove navigation items as needed -->
-      </ul>
-    </nav>
-
-    <!-- Main Content Section -->
-    <main class="container">
-      <!-- Media Player Section -->
-      <div class="media-player">
-        <video id="custom-video-player" controls loop>
-          <source
-            src="vecteezy_ai-generated-beautiful-fantasy-island-with-a-house-in_37918793.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div class="custom-controls">
-          <button id="play-pause-btn" onclick="togglePlayPause()">
-            <img
-              id="play-pause-img"
-              src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
-              alt="Play Button"
-              width="24"
-              height="24"
-            />
+    <video autoplay muted loop id="myVideo">
+      <source
+        src="vecteezy_ai-generated-beautiful-fantasy-island-with-a-house-in_37918793.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <!-- Pomodoro Timer -->
+    <div class="pomodoro">
+      <div class="container">
+        <div class="section-container">
+          <button id="focus" class="btn btn-timer btn-focus">Focus</button>
+          <button id="shortbreak" class="btn btn-shortbreak">
+            Short Break
           </button>
-          <!-- add the missing buttons or functionality here -->
-          <div class="progress-bar">
-            <span id="progress-bar-fill"></span>
+          <button id="longbreak" class="btn btn-longbreak">Long Break</button>
+        </div>
+        <div class="time-btn-container">
+          <span id="time"></span>
+          <div class="btn-container">
+            <button id="btn-start" class="show">Start</button>
+            <button id="btn-pause" class="hide">Pause</button>
+            <button id="btn-reset" class="hide">
+              <i class="material-symbols-outlined"> refresh </i>
+            </button>
+          </div>
+          <div class="world-selection">
+            <button class="btnforwlds" id="daytime">Daytime</button>
+            <button class="btnforwlds" id="sunset">Sunset</button>
+            <button class="btnforwlds" id="night">Night</button>
           </div>
         </div>
       </div>
-
-      <!-- Additional Content Section -->
-      <section>
-        <h2>Additional Content</h2>
-        <p>This is where you can showcase any other relevant content.</p>
-        <!-- Add more content as needed -->
-      </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-      <p>&copy; 2024 Media Player Website. All rights reserved.</p>
-      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
-      <a href="https://icons8.com">Icons8</a>
-      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
-      <a href="https://icons8.com">Icons8</a>
-    </footer>
+    </div>
   </body>
 </html>
