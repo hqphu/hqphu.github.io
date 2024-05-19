@@ -43,7 +43,7 @@ button {
 #time {
   text-align: center;
   color: #ffffff;
-  font-size: 5em;
+  font-size: 10em;
   font-weight: 600;
   margin-bottom: 20%;
   margin-top: 20%;
@@ -112,10 +112,17 @@ button {
   background-color: #8c00ff;
 }
 
-#video-worlds {
-  position: fixed;
-  right: 0;
-  bottom: 0;
+.video-worlds {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.video-worlds video {
+  position: absolute;
+  width: auto;
+  height: auto;
   min-width: 100%;
   min-height: 100%;
 }

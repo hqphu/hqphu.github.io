@@ -6,16 +6,19 @@ let startBtn = document.getElementById("btn-start");
 let reset = document.getElementById("btn-reset");
 let pause = document.getElementById("btn-pause");
 let time = document.getElementById("time");
+let audio = document.getElementById("focus-audio");
 let set;
 let active = "focus";
 let count = 59;
 let paused = true;
 let minCount = 24;
+
 time.textContent = `${minCount + 1}:00`;
 const appendZero = (value) => {
   value = value < 10 ? `0${value}` : value;
   return value;
 };
+
 reset.addEventListener(
   "click",
   (resetTime = () => {
@@ -33,13 +36,17 @@ reset.addEventListener(
     }
     count = 59;
     time.textContent = `${minCount + 1}:00`;
+    audio.pause();
   })
 );
+
 const removeFocus = () => {
   buttons.forEach((btn) => {
     btn.classList.remove("btn-focus");
+    audio.pause();
   });
 };
+
 focusButton.addEventListener("click", () => {
   removeFocus();
   focusButton.classList.add("btn-focus");
@@ -48,6 +55,7 @@ focusButton.addEventListener("click", () => {
   count = 59;
   time.textContent = `${minCount + 1}:00`;
 });
+
 shortBreakButton.addEventListener("click", () => {
   active = "short";
   removeFocus();
@@ -57,6 +65,7 @@ shortBreakButton.addEventListener("click", () => {
   count = 59;
   time.textContent = `${appendZero(minCount + 1)}:00`;
 });
+
 longBreakButton.addEventListener("click", () => {
   active = "long";
   removeFocus();
@@ -66,6 +75,7 @@ longBreakButton.addEventListener("click", () => {
   count = 59;
   time.textContent = `${minCount + 1}:00`;
 });
+
 pause.addEventListener(
   "click",
   (pauseTimer = () => {
@@ -74,8 +84,10 @@ pause.addEventListener(
     startBtn.classList.remove("hide");
     pause.classList.remove("show");
     reset.classList.remove("show");
+    audio.pause();
   })
 );
+
 startBtn.addEventListener("click", () => {
   reset.classList.add("show");
   pause.classList.add("show");
@@ -97,4 +109,5 @@ startBtn.addEventListener("click", () => {
       }
     }, 1000);
   }
+  audio.play();
 });
