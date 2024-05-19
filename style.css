@@ -124,13 +124,6 @@ button {
   background-color: #8c00ff;
 }
 
-.video-worlds {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
-
 .video-worlds video {
   position: absolute;
   width: auto;
@@ -140,8 +133,8 @@ button {
 }
 
 footer {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
+  background-color: black;
+  color: white;
   text-align: center;
   width: 100%;
   margin-bottom: 10px;
