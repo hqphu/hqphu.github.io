@@ -22,6 +22,32 @@ let minCount = 24;
 //each function below that is declared with the arrow function I'm keeping the function precise to stay within the user input selected.
 //Above I've opted to delare using "let" as I know the user will switch from focus and their break, so let is used for all variables to keep the consistency, and let the code change the values of the varaible when they click.
 
+daytime.addEventListener("click", () => {
+  videoInput.src =
+    "vecteezy_ai-generated-beautiful-fantasy-island-with-a-house-in_37918793.mp4";
+  daytime.classList.add("daytime");
+  sunset.classList.remove("sunset");
+  night.classList.remove("night");
+});
+
+sunset.addEventListener("click", () => {
+  videoInput.src =
+    "vecteezy_ai-generated-silhouettes-of-people-against-the-background-of_38599328.mp4";
+  daytime.classList.remove("daytime");
+  sunset.classList.add("sunset");
+  night.classList.remove("night");
+});
+
+night.addEventListener("click", () => {
+  videoInput.src =
+    "No copyright Lofi animation Background loop ｜ visual loop.mp4";
+  daytime.classList.remove("daytime");
+  sunset.classList.remove("sunset");
+  night.classList.add("night");
+});
+//setting the code for the state changes of the button and changing the video source so that the user is able to change their environment based on their selection.
+//because there are only 3 buttons I've decided to repeat the code to change class lists as the options are already quite limited.
+
 time.textContent = `${minCount + 1}:00`;
 
 const appendZero = (value) => {
@@ -98,20 +124,6 @@ longBreakButton.addEventListener("click", () => {
 });
 //implementation of the code for long break selection. Here the functions we have set such as removefocus and pause timer come in handy as they are used across the user "clicks" to chance the pomodoro timer functions.
 
-pause.addEventListener(
-  "click",
-  (pauseTimer = () => {
-    paused = true;
-    clearInterval(set);
-    startBtn.classList.remove("hide");
-    pause.classList.remove("show");
-    reset.classList.remove("show");
-    audio.pause();
-  })
-);
-//in the case of the pause button im changing the class list to reveal the button option after it has been selected.
-//pause variable is activated and redeclared, and the timer is set to the progression it has made using clearInterval().
-
 startBtn.addEventListener("click", () => {
   reset.classList.add("show");
   pause.classList.add("show");
@@ -135,33 +147,21 @@ startBtn.addEventListener("click", () => {
   }
   audio.play();
 });
-
-// pomodoro code assisted by EK - Developer on Youtube, found at https://www.youtube.com/watch?v=sYFR4NJkrFc&t=191s&ab_channel=EK-developer.
 //for start button I bring in coditionals to respond to the different case scenarios the user has inputted.
 //first I detect if paused is active with "true" or "false" to reset the timer.
 
-daytime.addEventListener("click", () => {
-  videoInput.src =
-    "vecteezy_ai-generated-beautiful-fantasy-island-with-a-house-in_37918793.mp4";
-  daytime.classList.add("daytime");
-  sunset.classList.remove("sunset");
-  night.classList.remove("night");
-});
+pause.addEventListener(
+  "click",
+  (pauseTimer = () => {
+    paused = true;
+    clearInterval(set);
+    startBtn.classList.remove("hide");
+    pause.classList.remove("show");
+    reset.classList.remove("show");
+    audio.pause();
+  })
+);
+//in the case of the pause button im changing the class list to reveal the button option after it has been selected.
+//pause variable is activated and redeclared, and the timer is set to the progression it has made using clearInterval().
 
-sunset.addEventListener("click", () => {
-  videoInput.src =
-    "vecteezy_ai-generated-silhouettes-of-people-against-the-background-of_38599328.mp4";
-  daytime.classList.remove("daytime");
-  sunset.classList.add("sunset");
-  night.classList.remove("night");
-});
-
-night.addEventListener("click", () => {
-  videoInput.src =
-    "No copyright Lofi animation Background loop ｜ visual loop.mp4";
-  daytime.classList.remove("daytime");
-  sunset.classList.remove("sunset");
-  night.classList.add("night");
-});
-//setting the code for the state changes of the button and changing the video source so that the user is able to change their environment based on their selection.
-//because there are only 3 buttons I've decided to repeat the code to change class lists as the options are already quite limited.
+// pomodoro code assisted by EK - Developer on Youtube, found at https://www.youtube.com/watch?v=sYFR4NJkrFc&t=191s&ab_channel=EK-developer.
