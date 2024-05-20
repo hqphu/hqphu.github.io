@@ -12,9 +12,11 @@
     />
     <script src="script.js" defer></script>
   </head>
+
   <body>
     <header>
       <h1>Media Player Website</h1>
+      <h1>2024 Media Player Website. All rights reserved.</h1>
     </header>
 
     <audio loop id="focus-audio">
@@ -36,21 +38,28 @@
     <div class="pomodoro">
       <div class="container">
         <div class="section-container">
-          <button id="focus" class="btn btn-timer btn-focus">Focus</button>
-          <button id="shortbreak" class="btn btn-shortbreak">
+          <button id="focus" class="button button-timer buttonfocus">
+            Focus
+          </button>
+          <button id="shortbreak" class="button button-shortbreak">
             Short Break
           </button>
-          <button id="longbreak" class="btn btn-longbreak">Long Break</button>
+          <button id="longbreak" class="button button-longbreak">
+            Long Break
+          </button>
         </div>
-        <div class="time-btn-container">
+
+        <div class="timeButtonContainer">
           <span id="time"></span>
-          <div class="btn-container">
-            <button id="btn-start" class="show">Start</button>
-            <button id="btn-pause" class="hide">Pause</button>
-            <button id="btn-reset" class="hide">
+
+          <div class="button-container">
+            <button id="buttonstart" class="show">Start</button>
+            <button id="buttonpause" class="hide">Pause</button>
+            <button id="buttonreset" class="hide">
               <i class="material-symbols-outlined"> refresh </i>
             </button>
           </div>
+
           <div class="world-selection">
             <button class="btnforwlds" id="daytime">Daytime</button>
             <button class="btnforwlds" id="sunset">Sunset</button>
@@ -59,8 +68,5 @@
         </div>
       </div>
     </div>
-    <footer>
-      <h1>2024 Media Player Website. All rights reserved.</h1>
-    </footer>
   </body>
 </html>

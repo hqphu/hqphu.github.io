@@ -34,18 +34,18 @@ button {
   gap: 1em;
   justify-content: center;
 }
-.btn {
+.button {
   padding: 1em 2em;
   border-radius: 0.5em;
   background-color: #3e3f43;
   color: #ffffff;
   transition: background-color 500ms ease-in;
 }
-.btn-focus {
+.buttonfocus {
   background-color: #1e00ff;
   color: #ffffff;
 }
-.time-btn-container {
+.timeButtonContainer {
   display: flex;
   flex-direction: column;
   margin-top: 2em;
@@ -58,50 +58,24 @@ button {
   margin-bottom: 20%;
   margin-top: 20%;
 }
-.btn-container {
+.button-container {
   display: flex;
   justify-content: center;
   gap: 2em;
 }
-#btn-start,
-#btn-pause {
+#buttonstart,
+#buttonpause {
   padding: 1em 2em;
   border-radius: 0.5em;
   cursor: pointer;
   background-color: #0011ff;
 }
-#btn-reset {
+#buttonreset {
   background-color: transparent;
   border: none;
   outline: none;
   color: #ffffff;
   font-size: 2em;
-}
-.hide {
-  display: none;
-  transition: display 100ms, opacity 0.5s linear;
-}
-.show {
-  display: block;
-  transition: display 100ms, opacity 0.5s linear;
-}
-
-.pomodoro {
-  display: block;
-}
-
-.world-selection {
-  justify-content: center;
-  display: flex;
-  margin-top: 20%;
-}
-
-.btnforwlds {
-  padding: 1em 2em;
-  border-radius: 0.5em;
-  background-color: #3e3f43;
-  color: #ffffff;
-  transition: background-color 500ms ease-in;
 }
 
 /* CSS Animations for the Pomodoro */
@@ -132,6 +106,35 @@ button {
 
 .night {
   background-color: #8c00ff;
+}
+
+/* end of animation code */
+
+.hide {
+  display: none;
+  transition: display 100ms, opacity 0.5s linear;
+}
+.show {
+  display: block;
+  transition: display 100ms, opacity 0.5s linear;
+}
+
+.pomodoro {
+  display: block;
+}
+
+.world-selection {
+  justify-content: center;
+  display: flex;
+  margin-top: 20%;
+}
+
+.btnforwlds {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  background-color: #3e3f43;
+  color: #ffffff;
+  transition: background-color 500ms ease-in;
 }
 
 .video-worlds video {
