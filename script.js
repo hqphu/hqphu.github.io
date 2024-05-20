@@ -46,7 +46,12 @@ night.addEventListener("click", () => {
   night.classList.add("night");
 });
 //setting the code for the state changes of the button and changing the video source so that the user is able to change their environment based on their selection.
-//because there are only 3 buttons I've decided to repeat the code to change class lists as the options are already quite limited.
+//because there are only 3 buttons I've decided to repeat the code to change class lists as the options are already quite limited.\
+//daytime and sunset video sourced from dfdesain and licensed under Vecteezy.
+//found at https://www.vecteezy.com/video/37918793-beautiful-fantasy-island-with-a-house-in-forest-anime-ilustration-style-smooth-looping-time-lapse-animatied-video-background
+//found at https://www.vecteezy.com/video/38599328-silhouettes-of-people-against-the-background-of-mountains-and-lakes-at-a-beautiful-sunset
+//night video sourced from Eli Eli on youtube.
+//found at https://www.youtube.com/watch?v=CwJIv4jgUlk&ab_channel=EliEli
 
 time.textContent = `${minCount + 1}:00`;
 
