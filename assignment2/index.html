@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Media Player Website</h1>
+      <h1>2024 Media Player Website. All rights reserved.</h1>
+    </header>
+
+    <audio loop id="focus-audio">
+      <source src="erokia_ambient-wave-56-msfxp7-78.mp3" type="audio/ogg" />
+    </audio>
+
+    <div class="video-worlds">
+      <video
+        autoplay
+        muted
+        loop
+        id="video-input"
+        src="vecteezy_ai-generated-beautiful-fantasy-island-with-a-house-in_37918793.mp4"
+        type="video/mp4"
+      ></video>
+    </div>
+
+    <!-- Pomodoro Timer -->
+    <div class="pomodoro">
+      <div class="container">
+        <div class="section-container">
+          <button id="focus" class="button button-timer buttonfocus">
+            Focus
+          </button>
+
+          <button id="shortbreak" class="button button-shortbreak">
+            Short Break
+          </button>
+
+          <button id="longbreak" class="button button-longbreak">
+            Long Break
+          </button>
+        </div>
+
+        <div class="timeButtonContainer">
+          <span id="time"></span>
+
+          <div class="button-container">
+            <button id="buttonstart" class="show">Start</button>
+
+            <button id="buttonpause" class="hide">Pause</button>
+
+            <button id="buttonreset" class="hide">
+              <i class="material-symbols-outlined"> refresh </i>
+            </button>
+          </div>
+
+          <div class="world-selection">
+            <button class="btnforwlds" id="daytime">Daytime</button>
+
+            <button class="btnforwlds" id="sunset">Sunset</button>
+
+            <button class="btnforwlds" id="night">Night</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

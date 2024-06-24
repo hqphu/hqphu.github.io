@@ -1,0 +1,153 @@
+header,
+footer {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: min(90%, 500px);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 4em 2em;
+  border-radius: 0.5em;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.section-container {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+.button {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  background-color: #3e3f43;
+  color: #ffffff;
+  transition: background-color 500ms ease-in;
+}
+.buttonfocus {
+  background-color: #1e00ff;
+  color: #ffffff;
+}
+.timeButtonContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+#time {
+  text-align: center;
+  color: #ffffff;
+  font-size: 10em;
+  font-weight: 600;
+  margin-bottom: 20%;
+  margin-top: 20%;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+#buttonstart,
+#buttonpause {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  background-color: #0011ff;
+}
+#buttonreset {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 2em;
+}
+
+/* CSS Animations for the Pomodoro */
+
+.btn:hover {
+  background-color: #1e00ff;
+}
+
+#daytime:hover {
+  background-color: #159c9c;
+}
+
+.daytime {
+  background-color: #159c9c;
+}
+
+#sunset:hover {
+  background-color: #ff8c00;
+}
+
+.sunset {
+  background-color: #ff8c00;
+}
+
+#night:hover {
+  background-color: #8c00ff;
+}
+
+.night {
+  background-color: #8c00ff;
+}
+
+/* end of animation code */
+
+.hide {
+  display: none;
+  transition: display 100ms, opacity 0.5s linear;
+}
+.show {
+  display: block;
+  transition: display 100ms, opacity 0.5s linear;
+}
+
+.pomodoro {
+  display: block;
+}
+
+.world-selection {
+  justify-content: center;
+  display: flex;
+  margin-top: 20%;
+}
+
+.btnforwlds {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  background-color: #3e3f43;
+  color: #ffffff;
+  transition: background-color 500ms ease-in;
+}
+
+.video-worlds video {
+  position: absolute;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin-bottom: 10px;
+}
