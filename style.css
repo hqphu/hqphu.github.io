@@ -10,11 +10,16 @@ body {
 }
 
 h1 {
-  font-size: 60pt;
+  font-size: 48pt;
 }
 
 h3 {
-  font-size: 30pt;
+  font-size: 25pt;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 16pt;
 }
 
 .landingTitle {
@@ -30,8 +35,8 @@ h3 {
 
 .landingTitle:hover {
   color: rgb(0, 30, 255);
-  -webkit-text-stroke: 0.1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke: 0.2px;
+  -webkit-text-stroke-color: rgb(216, 26, 26);
 }
 
 img {
@@ -48,13 +53,110 @@ img {
 }
 
 #canvas1 {
-  position: ;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
 }
 
-p {
+.data {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: blue;
+  overflow: hidden;
+
+  color: white;
+  border-radius: 50%;
+  border-color: rgb(212, 217, 233);
+  border-style: solid;
+}
+
+#infoTwo {
   position: absolute;
+  top: 1900px;
+  left: 1140px;
+  transition: ease 500ms;
+  color: transparent;
+}
+
+#infoTwo:hover {
+  overflow: visible;
+  width: 20rem;
+  height: 20rem;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: blue;
+}
+
+#infoThree {
+  position: absolute;
+  top: 1625px;
+  left: 1250px;
+  transition: ease 500ms;
+  color: transparent;
+}
+
+#infoThree:hover {
+  overflow: visible;
+  width: 20rem;
+  height: 23rem;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: blue;
+}
+
+#infoFour {
+  position: absolute;
+  top: 1750px;
+  left: 1175px;
+  transition: ease 500ms;
+  color: transparent;
+}
+
+#infoFour:hover {
+  overflow: visible;
+  width: 20rem;
+  height: 23rem;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: blue;
+}
+
+#infoFive {
+  position: absolute;
+  top: 1550px;
+  left: 1000px;
+  transition: ease 500ms;
+  color: transparent;
+}
+
+#infoFive:hover {
+  overflow: visible;
+  width: 20rem;
+  height: 26rem;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: blue;
+}
+
+#infoOne {
+  position: absolute;
+  top: 1850px;
+  left: 1000px;
+  transition: ease 500ms;
+  color: transparent;
+}
+
+#infoOne:hover {
+  overflow: visible;
+  width: 20rem;
+  height: 16rem;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: blue;
 }
