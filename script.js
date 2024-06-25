@@ -118,3 +118,5 @@ function drawImage() {
     init();
   });
 }
+
+// canvas physics and calculation have been inspired and understood by a tutorial by Franks laboratory of Youtube found at https://www.youtube.com/watch?v=vAJEHf92tV0&t=781s&ab_channel=Frankslaboratory

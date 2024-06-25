@@ -14,6 +14,9 @@
       rel="stylesheet"
     />
   </head>
+
+  <!-- As part project I intend to develop a codebase that exhibits artwork into a digital form that engages with the audience to further their undertsanding of the work's background intent by providing further interactivity.
+  Often, in physical galleries patrons take an observational approach to art consumption. However it is through digital formats that this project hopes to exemplify the process of understanding an artwork by engaging the audience through inputs and play. -->
   <body>
     <div id="landingPage">
       <div class="landingTitle">
@@ -26,7 +29,12 @@
         <img src="Last_Judgement_(Michelangelo).png" />
       </div>
     </div>
-
+    <!-- The div elements above situate the landing title for the user, and has been contained to provide hover input into CSS.
+  Hover is harnessed to provided the user to seamlessly but also flamboyantly reveal the artwork's title.
+  The small gesture of a hover intends to provide an ease to the user to gather information of the art work and its history.
+  Notice I have situated the artwork as also a png to provided a static media to allow the user to observe the art in isolation as found in real life.
+  This is a presevation of the art consumption process found in galleries and again, allows the user to easily gesture away from the title element hitbox.
+  "The Last Judgement" by Michelangelo, licensed under Creative Commons of Public Art. -->
     <div class="data" id="infoTwo">
       <h2>Central Figure of Christ:</h2>
       <br />
@@ -100,9 +108,25 @@
         sin, redemption, and divine justice.
       </p>
     </div>
+    <!-- The containers above hold various informations of the artwork and have also
+    been contained to allow for visual manipulation into CSS. They appear as
+    dots on top of the Pixelation version of the artwork below the original PNG
+    to visually communicate to the user a point of interactivity. They pocket
+    and reveal the information below them in the div container, later to be hovered on until CSS intiates a link state to open the container. -->
+    <!-- Information of the artwork and its content are synthesised from Khan Academy
+    "Last Judgment, Sistine Chapel" available at https://www.khanacademy.org/humanities/renaissance-reformation/high-ren-florence-rome/michelangelo/a/michelangelo-last-judgment -->
 
-    <!-- the canvas element below is used to harness the ability to draw the artwork onto the webpage and provide the image with interactive animations and be able to react to the user input as intended for the project -->
     <canvas id="canvas1"></canvas>
+    <!-- the canvas element below is used to harness the ability to draw the artwork onto the webpage and provide the image with interactive animations and be able to react to the user input as intended for the project -->
+    <!-- In this project, the canvas element harnesses the ability to appropriate the
+    artwork and create an interactive variant of it. The product I have left is
+    a liquid pixellation of the original artwork png which has been embedded as
+    a Base64 to allow canvas to contain individual pixel information. As the
+    user hovers across the artwork the pixel information is dissolved a creates a visual appeal to the user that responds to their input.
+    In doing so the canvas visuals emphasise the user's hover, encourages and intimacy with artwork, and gamifies the process of opening the dots on the artwork for learning about its history. -->
+    <!-- The dots have further been situated on top of the artwork locations for whicoh they are related to. That being every dot placement is situatied to a location on the artwork the infromation relates to.
+    The pixellation artwork and the previous png have been kept as serpate pieces of  information to allows the under to observe an undisturbed version of the artwork to quickly scroll and relation the infromation they have just read to the artwork's orginal image. -->
+    <!-- Further I have opted for the pixellation liquidation effect to be analogous of the user "rubbing away" at the artwork's surface, to further learn of the deep insights behind its visual form and imagery, but to also learn of its history and context in Christian folk. -->
 
     <script src="script.js"></script>
   </body>
