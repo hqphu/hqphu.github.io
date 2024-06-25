@@ -10,18 +10,18 @@ body {
 }
 
 h1 {
-  font-size: 100pt;
+  font-size: 5em;
 }
 
 h3 {
-  font-size: 25pt;
+  font-size: 2em;
   font-weight: bold;
   font-family: Helvetica;
 }
 
 h2 {
   font-weight: bold;
-  font-size: 16pt;
+  font-size: 1em;
 }
 
 .landingTitle {
@@ -75,8 +75,8 @@ img {
 
 #infoTwo {
   position: absolute;
-  top: 1900px;
-  left: 1140px;
+  top: 170vh;
+  left: 49vw;
   transition: ease 500ms;
   color: transparent;
 }
@@ -93,8 +93,8 @@ img {
 
 #infoThree {
   position: absolute;
-  top: 1625px;
-  left: 1250px;
+  top: 128vh;
+  left: 60vw;
   transition: ease 500ms;
   color: transparent;
 }
@@ -102,7 +102,7 @@ img {
 #infoThree:hover {
   overflow: visible;
   width: 20rem;
-  height: 23rem;
+  height: 20rem;
   color: white;
   border-radius: 1rem;
   padding: 1rem;
@@ -111,8 +111,8 @@ img {
 
 #infoFour {
   position: absolute;
-  top: 1750px;
-  left: 1175px;
+  top: 149vh;
+  left: 51vw;
   transition: ease 500ms;
   color: transparent;
 }
@@ -120,7 +120,7 @@ img {
 #infoFour:hover {
   overflow: visible;
   width: 20rem;
-  height: 23rem;
+  height: 20rem;
   color: white;
   border-radius: 1rem;
   padding: 1rem;
@@ -129,8 +129,8 @@ img {
 
 #infoFive {
   position: absolute;
-  top: 1550px;
-  left: 1000px;
+  top: 135vh;
+  left: 40vw;
   transition: ease 500ms;
   color: transparent;
 }
@@ -147,8 +147,8 @@ img {
 
 #infoOne {
   position: absolute;
-  top: 1850px;
-  left: 1000px;
+  top: 155vh;
+  left: 40vw;
   transition: ease 500ms;
   color: transparent;
 }
