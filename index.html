@@ -7,10 +7,42 @@
     <title>Interactive Art Showcase</title>
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div id="landingPage">
+      <div class="landingTitle">
+        <h1 class="eb-garamond">
+          "The Last Judgement", Italian: Il Giudizio Universale, by Michelangelo
+        </h1>
+        <h3 class="eb-garamond">
+          Vatican Museums. Archived from the original on 29 July 2016.
+        </h3>
+      </div>
+      <div id="mainArtwork">
+        <img src="Last_Judgement_(Michelangelo).png" />
+      </div>
+    </div>
+
     <!-- the canvas element below is used to harness the ability to draw the artwork onto the webpage and provide the image with interactive animations and be able to react to the user input as intended for the project -->
     <canvas id="canvas1"></canvas>
+    <p>
+      "The Last Judgment" is replete with symbolic elements and allegorical
+      figures. Angels and demons battle for souls, symbolizing the eternal
+      struggle between good and evil. The resurrection of the dead at the bottom
+      of the fresco illustrates the Christian belief in bodily resurrection,
+      while Charon, the mythological ferryman of the dead from Dante's
+      "Inferno," is included to draw a connection between Christian and
+      classical themes of the afterlife. Additionally, the fresco reflects
+      Michelangelo's deep understanding of human anatomy and emotion, using
+      physical form and expression to convey complex theological ideas about
+      sin, redemption, and divine justice.
+    </p>
     <script src="script.js"></script>
   </body>
 </html>

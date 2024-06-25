@@ -26,8 +26,6 @@ window.addEventListener("load", (event) => {
 });
 
 function drawImage() {
-  let imageWidth = png.width;
-  let imageHeight = png.heigth;
   const data = ctx.getImageData(0, 0, 100, 100);
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
